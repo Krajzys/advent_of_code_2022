@@ -4,6 +4,7 @@ package myutils
 import (
 	"bufio"
 	"os"
+	"strconv"
 )
 
 // Function Check checks if the error is nil, if not it panics with the error message
@@ -38,6 +39,12 @@ func Sum(nums []int) int {
 		sum += val
 	}
 	return sum
+}
+
+func AtoiCheck(val string) int {
+	out, err := strconv.Atoi(val)
+	Check(err)
+	return out
 }
 
 type Set map[string]int
