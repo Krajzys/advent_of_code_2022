@@ -39,3 +39,10 @@ func Sum(nums []int) int {
 	}
 	return sum
 }
+
+type Set map[string]int
+
+func (s Set) Contains(key string) bool {
+	_, ok := s[key]
+	return ok
+}

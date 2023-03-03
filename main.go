@@ -4,6 +4,7 @@ import (
 	"advent_of_code/day1"
 	"advent_of_code/day2"
 	"advent_of_code/day3"
+	"advent_of_code/day4"
 	"fmt"
 	"os"
 )
@@ -20,6 +21,8 @@ func main() {
 		day2.Day2()
 	case "3":
 		day3.Day3()
+	case "4":
+		day4.Day4()
 	default:
 		fmt.Printf("The argument '%v' is invalid or the day was not yet implemented :)\n", os.Args[1])
 	}
